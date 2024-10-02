@@ -1,0 +1,159 @@
+<!-- Hero section -->
+<div class="section">
+  <div id="home" class="startpage_hero">
+    <div class="container_hero">
+      <h1 class="title-hero">Simply Chocolate kinder praline dark</h1>
+      <h2>
+        Treat yourself or a loved one to <br />
+        our finest ingredients for a moment <br />
+        of pure delight!
+      </h2>
+      <h3 class="mobile_subheader">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h3>
+    </div>
+
+    <div class="startpage_butons">
+      <div class="buttons">
+        <button data-modal-open="modal1" class="buynow_button" type="button">
+          Buy Now
+        </button>
+        <a href="#how-is-made" class="btn_link">How it’s made</a>
+      </div>
+      <div class="scroll_tolink_container">
+        <button class="text_buttonscroll" type button>
+          <a href="#footery" class="btn_scroll">scroll down</a>
+          <svg class="scroll_icon">
+            <use href="./images/icons.svg#icon-ScrollDown_DesktopTablet"></use>
+          </svg>
+        </button>
+
+        <!-- <p class="text_buttonscroll">Scroll down</p>
+        <svg class="scroll_icon">
+          <use href="./images/icons.svg#icon-ScrollDown_DesktopTablet"></use>
+        </svg> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Buy Now -->
+<div data-modal="modal1" class="modal1 is-hidden">
+  <div data-modal-content class="modal1_content">
+    <button data-modal-close type="button">X</button>
+    <h2 class="modal_title"><span>buy </span>now</h2>
+    <div class="container_products_list">
+      <ul class="products_list">
+        <li>
+          <img
+            src="./images/modal_pics_icons/chocolate-modal-1.jpg"
+            alt=" kinder chocolate bar"
+            width="120px"
+            height="107"
+          />
+          <button class="grams">100 g</button>
+        </li>
+        <li>
+          <img
+            src="./images/modal_pics_icons/chocolate-modal-2.jpg"
+            alt="kinder praline chocolate bar"
+            width="121px"
+            height="107"
+          />
+          <button class="grams">200 g</button>
+        </li>
+        <li>
+          <img
+            src="./images/modal_pics_icons/chocolate-modal-3.jpg"
+            alt="dark chocolate bar"
+            width="121px"
+            height="107"
+          />
+          <button class="grams">300 g</button>
+        </li>
+      </ul>
+      <form name="modal_form" class="modal_form">
+        <label class="modal_form_position">
+          Personal information
+          <div class="pers_info">
+            <input
+              type="text"
+              name="name"
+              class="modal_form_input"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Z\s]+"
+              title="Only letters and spaces are allowed"
+            />
+            <input
+              type="text"
+              name="surname"
+              placeholder="Surname"
+              class="modal_form_input"
+              required
+              pattern="[a-zA-Z\s]+"
+              title="Only letters and spaces are allowed"
+            />
+          </div>
+        </label>
+        <label class="modal_form_position">
+          Email
+          <input
+            type="email"
+            name="usermail"
+            placeholder="Enter your email"
+            class="modal_form_input"
+            required
+          />
+        </label>
+        <label class="modal_form_position">
+          Phone number
+          <div class="input-container">
+            <svg class="phone_icon">
+              <use
+                href="./images/modal_pics_icons/buynow_icons.svg#icon-Frame"
+              ></use>
+            </svg>
+            <!-- <span class="phone-prefix">+380</span> -->
+            <input
+              type="tel"
+              name="userphone"
+              placeholder="Phone number"
+              class="modal_form_input phone"
+              required
+              pattern="\+?\d{10,15}"
+              title="Phone number should be between 10 and 15 digits and can include a leading +"
+            />
+          </div>
+        </label>
+        <label class="modal_form_position">
+          Card number
+          <input
+            type="text"
+            name="usercard"
+            placeholder="Enter Card"
+            class="modal_form_input"
+            required
+            pattern="\d{16}"
+            title="Card number should be 16 digits"
+          />
+          <svg class="card_icon">
+            <use
+              href="./images/modal_pics_icons/buynow_icons.svg#icon-Mastercard"
+            ></use>
+          </svg>
+        </label>
+        <label class="modal_form_position">
+          Comment
+          <textarea
+            name="Comment"
+            placeholder="Enter text"
+            class="modal_form_comments"
+            rows="6"
+          ></textarea>
+          <button type="submit" class="modal_form-btn">Submit</button>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+
+}
+
+:root {
+    --orange: #FD9222;
+    --white: #FFFFFF;
+    --black: #111111;
+    --dark-violet: #1E1823;
+    --primary-font: 'Montserrat', sans-serif;
+
+}
+
+.benefit_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--black);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 128px;
+
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 25px 25px;
+}
+
+.item {
+    flex-basis: calc((100% - 30px) / 3);
+    padding: 30px 30px;
+    background-color: var(--black);
+    position: relative;
+
+}
+
+.card-set .line:after {
+    content: '';
+    height: 48%;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    top: 25%;
+    right: 0%;
+
+}
+
+.item h2 {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 22px;
+    margin: 20px 0;
+
+}
+
+.item p {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 17px;
+    letter-spacing: -2%;
+    margin: 0;
+
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    padding: 12px 12px;
+    border: 1px solid cornsilk;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+@media screen and (max-width: 478px) {
+
+    .benefit_container {
+            margin-bottom: 72px;
+        }
+
+    .item {
+        flex-basis: calc((100% - 30px)/1);
+        padding: 30px 20px;
+    }
+
+    .card-set .line:after {
+        display: none;
+
+    }
+}
+
+
+@media screen and (min-width:479px) and (max-width:767px) {
+    .benefit_container {
+        margin-bottom: 100px;
+    }
+    
+    .card-set {
+        justify-content: flex-start;
+        padding: 25px 25px;
+
+    }
+
+    .item {
+        flex-basis: calc((100% - 30px)/2);
+        padding: 30px 20px;
+    }
+
+    .card-set .box3 {
+        padding: 10px 10px;
+
+    }
+
+    .card-set .line:after {
+        display: none;
+    }
+}
+
+
